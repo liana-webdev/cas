@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Casino links</title>
+</head>
+<body>
+    <nav class="container">
+        <div class="ni-1 ni"><img src="./img/cl-logo.png" alt=""></div>
+        <div class="ni-2 ni">Играть в казино</div>
+        <div class="ni-3 ni">Бонусы казино</div>
+        <div class="ni-4 ni">Актуальные ссылки</div>
+        <div class="ni-5 ni">Вопросы и ответы</div>
+        <div class="ni-6 ni">Играть на телефоне в казино</div>
+    </nav>
+
+    <!-- Content Blocks Section -->
+<section class="container">
+    <div class="content-block cb1">
+        <div class="content-info">
+            <h2 class="content-title">Актуальные ссылки на Казино на сегодняшний день <span id="current-date"></span></h2>
+            <p class="content-description">Официальные онлайн казино для игры на реальные деньги. Актуальные ссылки для игры в казино с бонусами до +400% и фри спинами (бесплатными спинами) в слотах </p>
+        </div>
+    </div>
+    <!-- Repeat for other content blocks as needed -->
+</section>
+<script>
+    // Create a new Date object
+    const today = new Date();
+
+    // Get the day, month, and year from the Date object
+    const day = String(today.getDate()).padStart(2, '0');
+    const month = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    const year = today.getFullYear();
+
+    // Format the date as dd.mm.yyyy
+    const currentDate = day + '.' + month + '.' + year;
+
+    // Display the formatted date in the div with id="current-date"
+    document.getElementById('current-date').textContent = currentDate;
+</script>
+</body>
+</html>
