@@ -29,6 +29,7 @@
   justify-content: center;
   align-items: center;
   transition: opacity;
+  text-align: center;
 }
 .banner p {
   color: white;
@@ -58,6 +59,17 @@ nav .toggleNav {
   position: fixed;
   top: 5rem;
   right: 1rem;
+}
+nav .zerkalo {
+  padding: 0.4rem 1rem;
+  border-radius: 0.6rem;
+  position: fixed;
+  background-color: #f7ca15;
+  top: 5.1rem;
+  right: 8rem;
+  left: 8rem;
+  text-align: center;
+  display: none;
 }
 nav .active {
   display: block !important;
@@ -407,6 +419,9 @@ footer .footer a {
   nav .toggleNav {
     display: block;
   }
+  nav .zerkalo {
+    display: block;
+  }
   .content-block {
     background-size: cover;
     background-position: center;
@@ -414,7 +429,7 @@ footer .footer a {
   .content-info {
     width: 100%;
     padding: 6rem 1rem;
-    background-color: rgba(255, 255, 255, 0.3333333333);
+    background-color: rgba(255, 255, 255, 0.831372549);
     -webkit-backdrop-filter: blur(2px);
             backdrop-filter: blur(2px);
     text-shadow: 0px 2px 6px rgba(255, 254, 254, 0.833);

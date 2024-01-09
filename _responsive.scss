@@ -169,6 +169,11 @@
         .toggleNav {
             display: block;
         }
+
+        .zerkalo {
+            display: block;
+        }
+
     }
 
     .content-block {
@@ -179,7 +184,7 @@
     .content-info {
         width: 100%;
         padding: 6rem 1rem;
-        background-color: #ffffff55;
+        background-color: #ffffffd4;
         backdrop-filter: blur(2px);
         text-shadow: 0px 2px 6px rgba(255, 254, 254, 0.833);
     }
